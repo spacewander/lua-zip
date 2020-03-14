@@ -28,7 +28,9 @@ ENDIF()
 # / Find libzip
 
 # Find lua
-  FIND_PACKAGE(Lua REQUIRED)
+  SET(LUA_INCLUDE_DIR /usr/local/openresty/luajit/include/luajit-2.1)
+  SET(LUA_LIBRARIES /usr/local/openresty/luajit/lib/)
+  #FIND_PACKAGE(Lua REQUIRED)
 # / Find lua
 
 # Define how to build zip.so:
